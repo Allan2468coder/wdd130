@@ -6,7 +6,7 @@ nav {
 nav a {
     color: white;
     display: block;
-    padding: 10px;
+    padding: 15px;
 }
 
 h1 {
@@ -25,10 +25,17 @@ p {
     padding: 0;
 }
 
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
 aside {
-    width: 20cm;
-    margin: 1em;
-    border: 1px solid rgb(0, 0, 0, 0.2);/ padding: 1em;
+    max-width: 300px;
+    margin: 1em auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1em;
     background-color: #eee;
     color: #333;
     text-align: center;
