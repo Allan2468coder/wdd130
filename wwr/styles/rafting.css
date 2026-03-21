@@ -45,6 +45,17 @@ article {
     text-decoration: none;
 }
 
+.socialmedia img {
+    width: 40px;
+    /* adjust size here */
+    height: auto;
+    /* keeps proportions correct */
+    margin: 0 8px;
+    /* adds spacing between icons */
+    vertical-align: middle;
+    /* keeps them aligned neatly */
+}
+
 .hero {
     position: relative;
 }
