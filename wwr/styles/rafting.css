@@ -1,10 +1,12 @@
 :root {
     --primary-color: #055a05;
-    /* forest green */
+    /* green for headings */
     --secondary-color: #f4a261;
-    /* warm sand */
+    /* orange for boxes */
     --accent1-color: #264653;
-    /* dark slate blue */
+    /* dark slate for text */
+    --accent2-color: #e9c46a;
+    /* golden highlight */
     --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -45,17 +47,6 @@ article {
     text-decoration: none;
 }
 
-.socialmedia img {
-    width: 40px;
-    /* adjust size here */
-    height: auto;
-    /* keeps proportions correct */
-    margin: 0 8px;
-    /* adds spacing between icons */
-    vertical-align: middle;
-    /* keeps them aligned neatly */
-}
-
 .hero {
     position: relative;
 }
@@ -66,7 +57,7 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -75,7 +66,6 @@ h1 {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
-    /* white text - make sure there is enough contrast with the background-color */
 }
 
 .hero article {
@@ -85,10 +75,45 @@ h1 {
     background-color: var(--secondary-color);
     padding: 12px;
     opacity: 0.9;
+    max-width: 400px;
 }
 
 .hero article img {
     float: right;
     width: 125px;
     margin-left: 10px;
+}
+
+/* Centered orange boxes for History and Adventure headings */
+section h2 {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-family: var(--heading-font);
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+}
+
+/* Attractive orange text below headings */
+section p {
+    text-align: center;
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    font-size: 1.1rem;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Footer icons resized and centered */
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: auto;
+    margin: 0 8px;
 }
