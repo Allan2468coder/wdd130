@@ -1,12 +1,10 @@
 :root {
     --primary-color: #055a05;
-    /* green for headings */
+    /* forest green */
     --secondary-color: #f4a261;
-    /* orange for boxes */
+    /* warm sand */
     --accent1-color: #264653;
-    /* dark slate for text */
-    --accent2-color: #e9c46a;
-    /* golden highlight */
+    /* dark slate blue */
     --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -25,12 +23,8 @@ body {
 header,
 main,
 footer {
-    max-width: 840px;
-    /* changed from fixed width */
-    width: 100%;
+    width: 840px;
     margin: 0 auto;
-    padding: 0 16px;
-    /* added breathing room */
 }
 
 h1,
@@ -51,6 +45,17 @@ article {
     text-decoration: none;
 }
 
+.socialmedia img {
+    width: 40px;
+    /* adjust size here */
+    height: auto;
+    /* keeps proportions correct */
+    margin: 0 8px;
+    /* adds spacing between icons */
+    vertical-align: middle;
+    /* keeps them aligned neatly */
+}
+
 .hero {
     position: relative;
 }
@@ -61,7 +66,7 @@ article {
     height: auto;
 }
 
-.hero h1 {
+h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -70,6 +75,7 @@ article {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
+    /* white text - make sure there is enough contrast with the background-color */
 }
 
 .hero article {
@@ -79,54 +85,10 @@ article {
     background-color: var(--secondary-color);
     padding: 12px;
     opacity: 0.9;
-    max-width: 400px;
 }
 
 .hero article img {
     float: right;
     width: 125px;
     margin-left: 10px;
-}
-
-/* Centered orange boxes for History and Adventure headings */
-section h2 {
-    text-align: center;
-    background-color: var(--secondary-color);
-    color: var(--accent1-color);
-    /* fixed contrast */
-    font-family: var(--heading-font);
-    padding: 12px;
-    margin-bottom: 12px;
-    border-radius: 6px;
-}
-
-/* Attractive text below headings */
-section p {
-    text-align: center;
-    color: var(--accent2-color);
-    /* fixed contrast */
-    font-family: var(--heading-font);
-    font-size: 1.1rem;
-    margin: 0 auto;
-    max-width: 600px;
-}
-
-/* Footer icons resized and centered */
-.socialmedia {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.socialmedia img {
-    width: 40px;
-    height: auto;
-    margin: 0 8px;
-}
-
-/* Footer background using accent2 */
-footer {
-    background-color: var(--accent2-color);
-    text-align: center;
-    padding: 12px;
 }
