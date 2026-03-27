@@ -29,6 +29,13 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -41,6 +48,20 @@ section,
 article {
     margin: 16px;
     padding: 8px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    justify-content: flex-end;
+    /* aligns links to the right */
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-weight: bold;
 }
 
 .socialmedia a {
@@ -105,15 +126,38 @@ section p {
     max-width: 600px;
 }
 
+section {
+    margin-bottom: 24px;
+}
+
+.adventures {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.adventures figure {
+    flex: 1;
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 6px;
+}
+
 /* Footer icons resized and centered */
 .socialmedia {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    /* changed from center */
+    gap: 1rem;
     margin-top: 10px;
 }
 
 .socialmedia img {
     width: 40px;
     height: auto;
-    margin: 0 8px;
 }
