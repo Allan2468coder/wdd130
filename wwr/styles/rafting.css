@@ -113,8 +113,8 @@ nav a {
 section h2 {
     text-align: center;
     background-color: var(--secondary-color);
-    color: var(--accent1-color);
-    /* fixed contrast */
+    color: #fff;
+    /* simple fix for contrast */
     font-family: var(--heading-font);
     padding: 12px;
     margin-bottom: 12px;
@@ -124,8 +124,8 @@ section h2 {
 /* Attractive text below headings */
 section p {
     text-align: center;
-    color: var(--accent2-color);
-    /* fixed contrast */
+    color: var(--accent1-color);
+    /* stronger contrast */
     font-family: var(--heading-font);
     font-size: 1.1rem;
     margin: 0 auto;
