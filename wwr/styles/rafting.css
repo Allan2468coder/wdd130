@@ -1,9 +1,9 @@
 :root {
     --primary-color: #055a05;
     /* green for headings */
-    --secondary-color: #f4a261;
+    --secondary-color: #ACC8E5;
     /* orange for boxes */
-    --accent1-color: #264653;
+    --accent1-color: #112A46;
     /* dark slate for text */
     --accent2-color: #e9c46a;
     /* golden highlight */
@@ -98,6 +98,7 @@ nav a {
     bottom: 20px;
     left: 20px;
     background-color: var(--secondary-color);
+    /* orange */
     padding: 12px;
     opacity: 0.9;
     max-width: 400px;
@@ -135,7 +136,7 @@ nav a {
 section h2 {
     text-align: center;
     background-color: var(--secondary-color);
-    color: #fff;
+    color: #112A46;
     /* simple fix for contrast */
     font-family: var(--heading-font);
     padding: 12px;
