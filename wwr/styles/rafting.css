@@ -120,12 +120,6 @@ section p {
     max-width: 600px;
 }
 
-/* override rule placed later */
-.company-info p {
-    max-width: none;
-    /* cancels the restriction */
-}
-
 section {
     margin-bottom: 24px;
 }
@@ -230,8 +224,11 @@ footer {
 }
 
 .company-info p {
+    text-align: center;
     margin: 4px 0;
     font-size: 1rem;
+    max-width: none;
+    padding: 0;
 }
 
 .contact-grid {
