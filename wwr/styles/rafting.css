@@ -120,6 +120,12 @@ section p {
     max-width: 600px;
 }
 
+/* override rule placed later */
+.company-info p {
+    max-width: none;
+    /* cancels the restriction */
+}
+
 section {
     margin-bottom: 24px;
 }
@@ -270,13 +276,18 @@ footer {
     color: var(--accent1-color);
 }
 
-.contact-form input,
+.contact-form input[type="text"],
+.contact-form input[type="email"],
 .contact-form textarea {
     width: 100%;
     padding: 8px;
     border: 1px solid var(--accent1-color);
     border-radius: 4px;
     font-family: var(--body-font);
+}
+
+.contact-form input[type="radio"] {
+    width: auto;
 }
 
 .contact-form button {
