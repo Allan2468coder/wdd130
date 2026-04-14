@@ -12,58 +12,65 @@
 </head>
 
 <body>
-    <header>
-        <img src="images/logo.jpg" alt="Rafting Company Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+    <header class="site-header">
+        <div class="branding">
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="WWR Rafting logo">
+            </a>
+            <div>
+                <p class="site-name">White Water Rafting Adventures</p>
+                <p class="site-tagline">River adventures for every level</p>
+            </div>
+        </div>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
     <main>
-        <div class="hero">
+        <!-- Hero Section -->
+        <section class="hero">
             <img src="images/hero.jpg" alt="Rafting Adventure">
-            <h1>White Water Rafting Adventures</h1>
-            <article>
-                <img src="images/client.jpg" alt="Happy Client">
-                <p><strong>Mission:</strong> Our mission is to create unforgettable rafting
-                    adventures that blend
-                    excitement, safety, and the beauty of nature.
-                </p>
-                <p><strong>Creed:</strong> “Gone Rafting” is more than a phrase; it’s our promise to
-                    embrace the
-                    river and respect the environment.
-                </p>
-                <p><strong>Motto:</strong> Your Enjoyment is Our Pleasure.</p>
-            </article>
-        </div>
+            <div class="hero-text">
+                <span class="eyebrow">Our Story</span>
+                <h1>White Water Rafting Adventures</h1>
+                <p>Our mission is to create unforgettable rafting adventures that blend excitement,
+                    safety, and the beauty of nature.</p>
+            </div>
+        </section>
 
+        <!-- Mission / Creed / Motto -->
+        <section class="page-intro">
+            <h2>Mission, Creed & Motto</h2>
+            <p><strong>Mission:</strong> To deliver safe, thrilling, and memorable rafting
+                experiences.</p>
+            <p><strong>Creed:</strong> “Gone Rafting” is our promise to embrace the river and
+                respect the environment.</p>
+            <p><strong>Motto:</strong> Your Enjoyment is Our Pleasure.</p>
+        </section>
+
+        <!-- History Section -->
         <section class="history">
             <h2>History</h2>
             <div class="history-grid">
                 <div class="history-text">
-                    <p>We started in 2005 as a small rafting company by the CEO, Mr. Allan Ogwal...
-                    </p>
-                    <p>The company grew over the years, and today we are proud of that...</p>
+                    <p>We started in 2005 as a small rafting company founded by Mr. Allan Ogwal.</p>
+                    <p>Over the years, we grew into a trusted adventure provider.</p>
                 </div>
-
                 <img src="images/history.jpg" alt="Rafting History">
-
                 <div class="history-text">
-                    <p>Our growth has been fueled by passion for adventure and commitment to
-                        safety...</p>
+                    <p>Our growth has been fueled by passion for adventure and commitment to safety.
+                    </p>
                     <p>With experienced guides and a love for the river, we blend excitement with
-                        respect
-                        for nature.</p>
+                        respect for nature.</p>
                 </div>
             </div>
         </section>
 
-
+        <!-- Adventure Gallery -->
         <section>
             <h2>Adventure Awaits You!</h2>
             <div class="adventures">
@@ -89,20 +96,20 @@
                 </figure>
             </div>
         </section>
-
     </main>
 
-    <footer>
-        <p>&copy; 2026 White Water Rafting Adventures | Allan Ogwal</p>
+    <footer class="site-footer">
+        <p>© 2026 White Water Rafting Adventures | Allan Ogwal</p>
         <nav class="socialmedia">
             <a href="https://facebook.com">
-                <img src="images/facebook.svg" alt="Facebook Icon">
+                <img src="images/facebook.svg" alt="Facebook Icon" style="width:36px;height:36px;">
             </a>
             <a href="https://linkedin.com">
-                <img src="images/linkedin.svg" alt="LinkedIn Icon">
+                <img src="images/linkedin.svg" alt="LinkedIn Icon" style="width:36px;height:36px;">
             </a>
             <a href="https://instagram.com">
-                <img src="images/instagram.svg" alt="Instagram Icon">
+                <img src="images/instagram.svg" alt="Instagram Icon"
+                  style="width:36px;height:36px;">
             </a>
         </nav>
     </footer>

@@ -5,29 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-      content="Contact White Water Rafting Adventures. Find our address, phone, email, and reach out with questions.">
-    <meta name="author" content="Ogwal Allan">
-    <title>Contact Us - White Water Rafting Adventures</title>
+      content="Contact WWR Rafting for trip questions, reservations, and location details.">
+    <title>White Water Rafting Adventures | Contact</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-    <header>
-        <img src="images/logo.jpg" alt="White Water Rafting company logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+    <header class="site-header">
+        <div class="branding">
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="WWR Rafting logo">
+            </a>
+            <div>
+                <p class="site-name">White Water Rafting Adventures</p>
+                <p class="site-tagline">River adventures for every level</p>
+            </div>
+        </div>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
     <main>
         <section class="contact-section">
             <h1>White Water Rafting Adventures</h1>
-
             <div class="company-info">
                 <p><strong>Address:</strong> 123 Main River Street, Kolob, California</p>
                 <p><strong>Phone:</strong> +1 999 999 9999</p>
@@ -38,46 +42,26 @@
                 <div class="map">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63836.006957939324!2d32.581222399999994!3d0.3342336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sug!4v1775297946904!5m2!1sen!2sug"
-                      allowfullscreen loading="lazy"
+                      allowfullscreen="" loading="lazy"
                       referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
-                <div class="contact-form">
+                <div class="contact-form-panel">
                     <form action="#" method="post">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <fieldset>
-                            <legend>Message Purpose:</legend>
-                            <div>
-                                <input type="radio" id="purpose-general" name="purpose"
-                                  value="general">
-                                <label for="purpose-general">General Inquiry</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="purpose-reservation" name="purpose"
-                                  value="reservation">
-                                <label for="purpose-reservation">Reservation Question</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="purpose-suggestion" name="purpose"
-                                  value="suggestion">
-                                <label for="purpose-suggestion">Website Suggestion</label>
-                            </div>
-                        </fieldset>
-
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-
-                        <label for="newsletter">
-                            <input type="checkbox" id="newsletter" name="newsletter">
-                            Please subscribe me to the monthly newsletter
-                        </label>
-
-                        <button type="submit">Get in Touch!</button>
+                        <div class="form-field">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" name="name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" rows="6"
+                              required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -87,32 +71,26 @@
             <h2>We Are Here to Serve You</h2>
             <div class="employee-grid">
                 <figure>
-                    <img src="images/employee1.jpg"
-                      alt="Photo of CEO of White Water Rafting Adventures,Allan Ogwal">
+                    <img src="images/employee1.jpg" alt="Photo of CEO Allan Ogwal">
                     <figcaption>Allan Ogwal – CEO</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employee2.JPG"
-                      alt="Photo of Lead Guide of White Water Rafting Adventures,Sarah Namatovu">
+                    <img src="images/employee2.jpg" alt="Photo of lead guide Sarah Namatovu">
                     <figcaption>Sarah Namatovu – Lead Guide</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employee3.jpg"
-                      alt="Photo of Trip Coordinator of White Water Rafting Adventures,James Okello">
+                    <img src="images/employee3.jpg" alt="Photo of trip coordinator James Okello">
                     <figcaption>James Okello – Trip Coordinator</figcaption>
                 </figure>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 White Water Rafting Adventures | Allan Ogwal</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook Icon"></a>
-            <a href="https://linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn Icon"></a>
-            <a href="https://instagram.com"><img src="images/instagram.svg"
-                  alt="Instagram Icon"></a>
-        </nav>
+    <footer class="site-footer">
+        <p>&copy; 2026 White Water Rafting Adventures | River adventures with trusted guides and
+            unforgettable
+            memories.</p>
+        <p><a href="about.html">About</a> | <a href="trips.html">Trips</a></p>
     </footer>
 </body>
 
